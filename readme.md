@@ -21,10 +21,7 @@ If you can't execute the script, make it executable with:
 sudo chmod +x ./bootstrap-laravel/bootstrap.sh
 ```
 
-This bootstrapper does not run `npm install` or the asset compilers:
-
-- Laravel ~5.0 run: `gulp --production`
-- ^5.3 run: `npm run prod`
+This bootstrapper does not run `npm install` or the asset compiler e.g. `gulp --production`.
 
 
 #### Contributing
