@@ -32,8 +32,7 @@ then
   sudo -Eu root bash -c 'chmod 777 bootstrap/cache'
   sudo -Eu root bash -c 'chown $TEMPORARY_USER:www-data bootstrap/cache'
 
-  sudo -Eu root bash -c 'find ./storage -type d -exec chmod 777 {} \;'
-  sudo -Eu root bash -c 'find ./storage -type f ! -name .gitignore -exec chmod 644 {} \;'
+  sudo -Eu root bash -c 'find ./storage ! -name .gitignore -exec chmod 777 {} \;'
 
   sudo -Eu root bash -c 'chmod 750 ./'
   sudo -Eu root bash -c 'chown $TEMPORARY_USER:www-data ./'
